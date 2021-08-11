@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metatdata:
+  name: redis-pod
+  labels:
+    author: dorothy
+    name: redis-pod
+spec:
+  containers:
+    - name: redis
+      image: redis
+      ports:
+        - containerPort: 6379
+...
